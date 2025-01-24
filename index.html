@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Morfologia Matemática</title>
+</head>
+
+<body>
+    <main>
+        <section class="section-options">
+            <div class="div-input-image">
+                <label for="uploadImg" class="buttonStyle">Selecionar Imagem</label>
+                <input type="file" name="uploadImg" id="uploadImg" class="uploadInput" accept="image/*">
+            </div>
+            <div class="div-structuring-element-options">
+                <h2>Escolha a forma do elemento estruturante</h2>
+
+                <div class="div-input-element-options">
+                    <div class="input-se" id="seLinha">
+                        <input type="image" src="./img/Linha Horizontal.png" alt="Elemento Estruturante Linha">
+                        <label for="">Linha</label>
+                    </div>
+
+                    <div class="input-se" id="seCruz">
+                        <input type="image" src="./img/Cruz.png" alt="Elemento Estruturante Cruz">
+                        <label for="">Cruz</label>
+                    </div>
+
+                    <div class="input-se" id="seQuadrado">
+                        <input type="image" src="./img/Quadrado.png" alt="Elemento Estruturante Quadrado">
+                        <label for="">Quadrado</label>
+                    </div>
+                </div>
+            </div>
+            <div class="div-operation-options">
+                <h2>Escolha a operação morfológica</h2>
+
+                <input type="button" value="Aplicar Erosão" class="buttonStyle" id="erodeButton">
+                <input type="button" value="Aplicar Dilatação" class="buttonStyle" id="dilateButton">
+                <input type="button" value="Aplicar Abertura" class="buttonStyle" id="openButton">
+                <input type="button" value="Aplicar Fechamento" class="buttonStyle" id="closeButton">
+            </div>
+        </section>
+
+        <section class="section-final-image">
+            <canvas id="window" style="display: none;"></canvas>
+            <div class="div-imgs-1">
+                <img alt="Imagem Selecionada" id="imageTag">
+                <img alt="Imagem Convertida para Grayscale" id="grayImageTag">
+            </div>
+            <div class="div-imgs-2">
+                <img alt="Imagem Binária" id="binaryImageTag">
+                <img alt="Imagem Pós Operacao morfológica" id="operatedImageTag">
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #141414;
+    color: #eeeff1;
+}
+
+.buttonStyle {
+    text-transform: capitalize;
+    border: 3px solid #e6d353;
+    padding: 0.5rem;
+    width: 200px;
+    text-align: center;
+    border-radius: 12px;
+    color: #141414;
+    background-color: #eeeff1;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.buttonStyle:hover {
+    letter-spacing: 0.02rem;
+    background-color: #e6d353;
+    border-color: #eeeff1;
+    font-weight: bold;
+    transform: scale(1.02);
+}
+
+main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+/* MENU */
+.section-options {
+    border: 3px solid #eeeff1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 40%;
+    min-height: 620px;
+}
+
+.div-input-image {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploadInput {
+    display: none;
+}
+
+.div-structuring-element-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.div-input-element-options {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.input-se {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.input-se-selected {
+    border: 3px solid #e6d353;
+}
+
+.div-operation-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* JANELA DA IMAGEM */
+.section-final-image {
+    display: none;
+    border: 3px solid #eeeff1;
+    width: fit-content;
+    flex-direction: column;
+}
+
+.div-imgs-1 {
+    display: flex;
+
+}
+
+.div-imgs-2 {
+    display: flex;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 400px;
+    max-height: 300px;
+}
+
+#operatedImageTag {
+    display: none;
+}
