@@ -273,9 +273,9 @@ function dilateImage(imageData) {
                     // Posicao real do pixel na imagem.
                     const imgX = x + dx - offsetX;
                     const imgY = y + dy - offsetY;
-                    const pixel = data[(imgY * width + imgX) * 4];
+                    const pixelIndex = (imgY * width + imgX) * 4;
 
-                    if (selectedSE[dy][dx] && pixel === 255) {
+                    if (selectedSE[dy][dx] && data[pixelIndex] === 255) {
                         match = true;
                         break;
                     }
