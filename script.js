@@ -283,11 +283,11 @@ function dilateImage(imageData) {
                 if (match) break;
             }
 
-            const index = (y * width + x) * 4;
+            const centerIndex = (y * width + x) * 4;
 
             // Se pelo menos 1 pixel da área coberta pelo SE for 1,
             // então o pixel central do SE é mantido na imagem resultante.
-            output[index] = output[index + 1] = output[index + 2] = match ? 255 : 0; // RGBA
+            output[centerIndex] = output[centerIndex + 1] = output[centerIndex + 2] = match ? 255 : 0; // RGBA
         }
     }
 
